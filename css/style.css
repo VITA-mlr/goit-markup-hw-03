@@ -1,18 +1,13 @@
 /* 
 studio - 000000
-web - 2196F3
+web - 2196F3 - адрес.активньій 
 
-меню, фільтри - 212121
+меню, фільтри, заголовок - 212121
 меню.активньій - 2196F3
 
-адрес - 757575
-адрес.активньій - 2196F3
+адрес,текст - 757575
 
 герой, кнопка - FFFFFF
-
-заголовок - 212121
-текст - 757575
-
 
 футер-адрес, E-mail - rgba(255, 255, 255, 0.6);
 разработка - rgba(255, 255, 255, 0.4);
@@ -33,7 +28,7 @@ web - 2196F3
 
 /* General styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   background: #e5e5e5;
 }
@@ -45,11 +40,28 @@ a {
 
 ul {
   list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 /* Logotype */
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
