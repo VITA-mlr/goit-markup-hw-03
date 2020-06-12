@@ -1,0 +1,282 @@
+/* 
+studio - 000000
+web - 2196F3
+
+меню, фільтри - 212121
+меню.активньій - 2196F3
+
+адрес - 757575
+адрес.активньій - 2196F3
+
+герой, кнопка - FFFFFF
+
+заголовок - 212121
+текст - 757575
+
+
+футер-адрес, E-mail - rgba(255, 255, 255, 0.6);
+разработка - rgba(255, 255, 255, 0.4);
+*/
+
+:root {
+  --logo-color: #000000;
+  --text-color: #757575;
+  --header-menu-color: #212121;
+  --menu-active-color: #2196f3;
+  --hero-button-color: #ffffff;
+  --team-color: #f5f4fa;
+
+  --footer-backgraund: #2f303a;
+  --footer-address-color: rgba(255, 255, 255, 0.6);
+  --developer-color: rgba(255, 255, 255, 0.4);
+}
+
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  background: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--header-menu-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Logotype */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+}
+
+.logo-blue {
+  color: var(--menu-active-color);
+}
+
+.footer .logo {
+  color: var(--hero-button-color);
+}
+
+/* Button */
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  /* line-height: 1.8; */
+  letter-spacing: 0.06em;
+  display: inline-block;
+  color: var(--hero-button-color);
+  background-color: var(--menu-active-color);
+}
+
+.filters-item.button {
+  color: var(--header-menu-color);
+  background-color: var(--hero-button-color);
+}
+
+.filters-item.button:hover,
+.filters-item.button:focus {
+  color: var(--hero-button-color);
+  background-color: var(--menu-active-color);
+}
+
+/* Navigation in header */
+.header-background {
+  color: var(--hero-button-color);
+}
+
+.nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--header-menu-color);
+}
+
+/* .nav-a {
+  color: var(--header-menu-color);
+} */
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--menu-active-color);
+}
+
+.nav-item.current {
+  color: var(--hero-button-color);
+  background-color: var(--menu-active-color);
+}
+
+/* Navigation in footer */
+.footer {
+  background-color: var(--footer-backgraund);
+}
+
+.footer b {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--hero-button-color);
+}
+
+.footer-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--hero-button-color);
+}
+
+.footer-contact {
+  color: var(--footer-address-color);
+}
+
+.developed {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--developer-color);
+}
+
+/* ------------ index.html --------------- */
+/* Hero section */
+.hero {
+  background-color: var(--text-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hero-button-color);
+}
+
+/* Sections */
+.sectoin-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-menu-color);
+}
+
+/* Section - features */
+.features-item-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-menu-color);
+}
+
+.features-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* Section - our works */
+.we_make-signature {
+  background-color: var(--text-color);
+}
+
+.we_make-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--hero-button-color);
+}
+
+/* Section - our team */
+.team {
+  background-color: var(--team-color);
+}
+
+.team-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-menu-color);
+}
+
+.team-profetion {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* -------------- portfolio.html -------------- */
+
+/* Filters*/
+.list-filters {
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.filters-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--header-menu-color);
+}
+
+.filters-item.current {
+  color: var(--hero-button-color);
+  background-color: var(--menu-active-color);
+}
+
+/* Portfolio */
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--hero-button-color);
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio-item-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--header-menu-color);
+}
+
+.about-project {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
