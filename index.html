@@ -4,28 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEB Studio</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="header-background">
+    <header class="header-section">
+      <nav class="container nav-flex">
         <!-- Logotype of site -->
         <a href="" class="logo"><span class="logo-blue">Web</span> Studio</a>
         <!-- Navigation by site -->
-        <ul class="nav-list">
-          <li><a class="nav-item current" href="">Студия</a></li>
-          <li><a class="nav-item" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="nav-item" href="">Контакты</a></li>
+        <ul class="nav-list-site">
+          <li><a class="nav-link current" href="">Студия</a></li>
+          <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="nav-link" href="">Контакты</a></li>
         </ul>
         <!-- Kontakts -->
-        <ul class="nav-list">
+        <ul class="nav-list-contacts">
           <li>
-            <a class="nav-item" href="mailto:info@devstudio.com">
+            <a class="nav-link" href="mailto:info@devstudio.com">
               <img
                 src="./images/envelope.svg"
                 alt="Иконка котверта"
@@ -35,7 +36,7 @@
             </a>
           </li>
           <li>
-            <a class="nav-item" href="tel:+380961111111">
+            <a class="nav-link" href="tel:+380961111111">
               <img
                 src="./images/smartphone.svg"
                 alt="Иконка телефона"
@@ -50,17 +51,19 @@
 
     <main>
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <a href="" class="button">Заказать услугу</a>
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <a href="" class="button">Заказать услугу</a>
+        </div>
       </section>
 
       <!--Section - features -->
       <section>
         <h2 class="sectoin-title">Особенности</h2>
-        <ul>
+        <ul class="container feature-flex">
           <li>
             <!--<div width="270">-->
-            <div>
+            <div class="img-feature">
               <img src="images/antenna_1.svg" alt="Иконка" width="70" />
             </div>
 
@@ -72,7 +75,7 @@
           </li>
           <li>
             <!--<div width="270">-->
-            <div>
+            <div class="img-feature">
               <img src="images/clock_1.svg" alt="Иконка" width="70" />
             </div>
 
@@ -84,7 +87,7 @@
           </li>
           <li>
             <!--<div width="270">-->
-            <div>
+            <div class="img-feature">
               <img src="images/diagram_1.svg" alt="Иконка" width="70" />
             </div>
 
@@ -96,7 +99,7 @@
           </li>
           <li>
             <!--<div width="270">-->
-            <div>
+            <div class="img-feature">
               <img src="images/astronaut_1.svg" alt="Иконка" width="70" />
             </div>
 
@@ -112,19 +115,22 @@
       <!-- There must to be a line -->
 
       <!-- Section - What do we make? -->
-      <section class="we_make">
+      <section class="we_make container">
         <h2 class="sectoin-title">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="we_make-flex">
           <li>
             <figure>
               <img
+                class="imgblock"
                 src="images/desktop_applications.jpg"
                 alt="Изобрвжение компютера"
                 width="370"
               />
               <figcaption>
                 <div class="we_make-signature">
-                  <h3 class="we_make-header">Десктопные приложения</h3>
+                  <h3 class="we_make-header">
+                    Десктопные приложения
+                  </h3>
                 </div>
               </figcaption>
             </figure>
@@ -132,6 +138,7 @@
           <li>
             <figure>
               <img
+                class="imgblock"
                 src="images/smartphone.jpg"
                 alt="Изобрвжение смартфона"
                 width="370"
@@ -146,6 +153,7 @@
           <li>
             <figure>
               <img
+                class="imgblock"
                 src="images/desktop_applications.jpg"
                 alt="Изобрвжение планшета"
                 width="370"
@@ -161,14 +169,15 @@
       </section>
 
       <!-- Section - our team -->
-      <section>
-        <div class="team">
+      <section class="team">
+        <div class="container">
           <h2 class="sectoin-title">Наша команда</h2>
 
-          <ul>
-            <li>
+          <ul class="team-flex">
+            <li class="team-item">
               <div>
                 <img
+                  class="imgblock"
                   src="images/photo_smith.jpg"
                   alt="Фото сотрудника"
                   width="270"
@@ -177,23 +186,26 @@
                 <h3 class="team-header">Николай Кучеренко</h3>
                 <p class="team-profetion">Product Designer</p>
 
-                <ul>
-                  <li>
+                <ul class="messengers-flex">
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Instagram">Instagram</a>
                   </li>
-                  <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-                  <li>
+                  <li class="messenger-item">
+                    <a href="" aria-label="Ссылка на Twitter">Twitter</a>
+                  </li>
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Facebook">Facebook</a>
                   </li>
-                  <li>
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Linkedin">Linkedin</a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="team-item">
               <div>
                 <img
+                  class="imgblock"
                   src="images/photo_stewart.jpg"
                   alt="Фото сотрудника"
                   width="270"
@@ -202,23 +214,26 @@
                 <h3 class="team-header">Ольга Иванова</h3>
                 <p class="team-profetion">Frontend Developer</p>
 
-                <ul>
-                  <li>
+                <ul class="messengers-flex">
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Instagram">Instagram</a>
                   </li>
-                  <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-                  <li>
+                  <li class="messenger-item">
+                    <a href="" aria-label="Ссылка на Twitter">Twitter</a>
+                  </li>
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Facebook">Facebook</a>
                   </li>
-                  <li>
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Linkedin">Linkedin</a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="team-item">
               <div>
                 <img
+                  class="imgblock"
                   src="images/photo_jakis.jpg"
                   alt="Фото сотрудника"
                   width="270"
@@ -227,23 +242,26 @@
                 <h3 class="team-header">Андрей Шевченко</h3>
                 <p class="team-profetion">Marketing</p>
 
-                <ul>
-                  <li>
+                <ul class="messengers-flex">
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Instagram">Instagram</a>
                   </li>
-                  <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-                  <li>
+                  <li class="messenger-item">
+                    <a href="" aria-label="Ссылка на Twitter">Twitter</a>
+                  </li>
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Facebook">Facebook</a>
                   </li>
-                  <li>
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Linkedin">Linkedin</a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="team-item">
               <div>
                 <img
+                  class="imgblock"
                   src="images/photo_doe.jpg"
                   alt="Фото сотрудника"
                   width="270"
@@ -252,15 +270,17 @@
                 <h3 class="team-header">Иван Николаев</h3>
                 <p class="team-profetion">UI Designer</p>
 
-                <ul>
-                  <li>
+                <ul class="messengers-flex">
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Instagram">Instagram</a>
                   </li>
-                  <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-                  <li>
+                  <li class="messenger-item">
+                    <a href="" aria-label="Ссылка на Twitter">Twitter</a>
+                  </li>
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Facebook">Facebook</a>
                   </li>
-                  <li>
+                  <li class="messenger-item">
                     <a href="" aria-label="Ссылка на Linkedin">Linkedin</a>
                   </li>
                 </ul>
@@ -273,94 +293,147 @@
       <!-- Section - regular customers -->
 
       <section>
-        <h2 class="sectoin-title">Постоянные клиенты</h2>
+        <div class="container">
+          <h2 class="sectoin-title">Постоянные клиенты</h2>
 
-        <ul>
-          <li>
-            <div>
-              <a>
-                <img src="images/logo_1.svg" alt="Логотип" width="44" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <a>
-                <img src="images/logo_2.svg" alt="Логотип" width="40" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <a>
-                <img src="images/logo_3.svg" alt="Логотип" width="41" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <a>
-                <img src="images/logo_4.svg" alt="Логотип" width="80" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <a>
-                <img src="images/logo_5.svg" alt="Логотип" width="59" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <a>
-                <img src="images/logo_6.svg" alt="Логотип" width="88" />
-              </a>
-            </div>
-          </li>
-        </ul>
+          <ul class="customers-flex">
+            <li>
+              <div class="customers-block">
+                <a>
+                  <img
+                    class="imgblock"
+                    src="images/logo_1.svg"
+                    alt="Логотип"
+                    width="44"
+                  />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="customers-block">
+                <a>
+                  <img
+                    class="imgblock"
+                    src="images/logo_2.svg"
+                    alt="Логотип"
+                    width="40"
+                  />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="customers-block">
+                <a>
+                  <img
+                    class="imgblock"
+                    src="images/logo_3.svg"
+                    alt="Логотип"
+                    width="41"
+                  />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="customers-block">
+                <a>
+                  <img
+                    class="imgblock"
+                    src="images/logo_4.svg"
+                    alt="Логотип"
+                    width="80"
+                  />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="customers-block">
+                <a>
+                  <img
+                    class="imgblock"
+                    src="images/logo_5.svg"
+                    alt="Логотип"
+                    width="59"
+                  />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="customers-block">
+                <a>
+                  <img
+                    class="imgblock"
+                    src="images/logo_6.svg"
+                    alt="Логотип"
+                    width="88"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <div class="footer">
-        <!-- Contact Information -->
-        <div>
-          <a href="" class="logo"><span class="logo-blue">Web</span> Studio</a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-flex">
+          <!-- Contact Information -->
+          <div>
+            <a href="" class="logo"
+              ><span class="logo-blue">Web</span> Studio</a
+            >
 
-          <address class="footer-address">
-            г. Киев, пр-т Леси Украинки, 26, <br />
+            <address class="footer-address">
+              г. Киев, пр-т Леси Украинки, 26, <br />
 
-            <span><a class="footer-contact" href="">info@example.com</a></span>
-            <br />
-            <span><a class="footer-contact" href="">+38 099 111 11 11</a></span>
-          </address>
-        </div>
+              <span
+                ><a class="footer-contact" href="">info@example.com</a></span
+              >
+              <br />
+              <span
+                ><a class="footer-contact" href="">+38 099 111 11 11</a></span
+              >
+            </address>
+          </div>
 
-        <!-- Our social networks -->
-        <div>
-          <b>Присоединяйтесь</b>
+          <!-- Our social networks -->
+          <div>
+            <b>Присоединяйтесь</b>
 
-          <ul>
-            <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
-            <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-            <li><a href="" aria-label="Ссылка на Twitter">Facebook</a></li>
-            <li><a href="" aria-label="Ссылка на Linkedin">Linkedin</a></li>
-          </ul>
-        </div>
+            <ul class="messengers-flex">
+              <li class="messenger-item">
+                <a href="" aria-label="Ссылка на Instagram">Instagram</a>
+              </li>
+              <li class="messenger-item">
+                <a href="" aria-label="Ссылка на Twitter">Twitter</a>
+              </li>
+              <li class="messenger-item">
+                <a href="" aria-label="Ссылка на Twitter">Facebook</a>
+              </li>
+              <li class="messenger-item">
+                <a href="" aria-label="Ссылка на Linkedin">Linkedin</a>
+              </li>
+            </ul>
+          </div>
 
-        <!-- Subscribe to the newsletter -->
-        <div>
-          <b>Подпишитесь на рассылку</b>
-          <form method="post">
-            <input type="email" name="user-email" placeholder="E-mail" />
-            <!-- <input type="submit" value="Подписаться" /> -->
+          <!-- Subscribe to the newsletter -->
+          <div class="form">
+            <b>Подпишитесь на рассылку</b>
+            <form method="post">
+              <input type="email" name="user-email" placeholder="E-mail" />
+              <!-- <input type="submit" value="Подписаться" /> -->
 
-            <a class="button" href="">
-              Подписаться
-              <img src="images/icon_send.svg" alt="Иконка стрелки" width="24" />
-            </a>
-          </form>
+              <a class="button" href="">
+                Подписаться
+                <img
+                  class="button-icon"
+                  src="images/icon_send.svg"
+                  alt="Иконка стрелки"
+                  width="24"
+                />
+              </a>
+            </form>
+          </div>
         </div>
 
         <!--There must to be a line-->
