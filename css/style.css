@@ -153,8 +153,7 @@ p {
   margin-bottom: 0;
 }
 
-.nav-flex,
-.footer-flex {
+.nav-flex {
   display: flex;
   align-items: center;
 }
@@ -215,6 +214,12 @@ p {
   background-color: var(--footer-backgraund);
 }
 
+.footer-flex {
+  display: flex;
+  align-items: center;
+  padding-bottom: 28px;
+}
+
 .footer b {
   font-weight: 700;
   font-size: 14px;
@@ -232,10 +237,6 @@ p {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--hero-button-color);
-}
-
-.footer-first-block {
-  padding-bottom: 28px;
 }
 
 .footer-contact {
