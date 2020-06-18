@@ -7,7 +7,7 @@ web - 2196F3 - адрес.активньій
 
 адрес,текст - 757575
 
-герой, кнопка - FFFFFF
+герой, кнопка, фон - FFFFFF
 
 футер-адрес, E-mail - rgba(255, 255, 255, 0.6);
 разработка - rgba(255, 255, 255, 0.4);
@@ -42,7 +42,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
 
-  background: #e5e5e5;
+  background: var(--hero-button-color);
 }
 
 a {
@@ -451,9 +451,6 @@ p {
   margin-bottom: 34px;
 }
 
-/* .list-filters {
-} */
-
 .filters-item {
   font-weight: 500;
   font-size: 16px;
@@ -523,7 +520,7 @@ p {
 
 .card-descriptio {
   background: var(--hero-button-color);
-  border-right: 1px solid blue;
+  border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding-top: 20px;
