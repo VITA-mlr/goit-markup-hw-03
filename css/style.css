@@ -41,7 +41,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  width: 1600px;
+
   background: #e5e5e5;
 }
 
@@ -447,8 +447,7 @@ p {
 /* Filters*/
 .filters {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
   margin-bottom: 34px;
 }
 
@@ -508,8 +507,7 @@ p {
   letter-spacing: 0.06em;
   color: var(--header-menu-color);
 
-  margin-top: 20px;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
 }
 
 .about-project {
@@ -518,6 +516,22 @@ p {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
 
-  margin-bottom: 20px;
+.card {
+}
+
+.card-descriptio {
+  background: var(--hero-button-color);
+  border-right: 1px solid blue;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.card-linc {
+  display: block;
 }
