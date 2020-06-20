@@ -99,7 +99,7 @@ p {
 /* Button */
 .button {
   display: inline-block;
-  min-width: 200px;
+  /* min-width: 200px; */
   padding: 10px 28px 10px 29px;
   border-radius: 4px;
 
@@ -431,6 +431,10 @@ p {
   width: 170px;
   height: 90px;
   border: 2px solid #afb1b8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .customers-block .imgblock {
@@ -515,8 +519,8 @@ p {
   color: var(--text-color);
 }
 
-.card {
-}
+/* .card {
+} */
 
 .card-descriptio {
   background: var(--hero-button-color);
@@ -531,4 +535,14 @@ p {
 
 .card-linc {
   display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  border: 0;
+  padding: 0;
+  height: 1px;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
