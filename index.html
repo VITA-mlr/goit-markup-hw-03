@@ -12,41 +12,36 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <header class="header-section">
-      <nav class="container nav-flex">
-        <!-- Logotype of site -->
-        <a href="" class="logo"><span class="logo-blue">Web</span> Studio</a>
-        <!-- Navigation by site -->
-        <ul class="nav-list-site">
-          <li><a class="nav-link current" href="">Студия</a></li>
-          <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="nav-link" href="">Контакты</a></li>
-        </ul>
-        <!-- Kontakts -->
-        <ul class="nav-list-contacts">
-          <li>
-            <a class="nav-link" href="mailto:info@devstudio.com">
-              <img
-                src="./images/envelope.svg"
-                alt="Иконка котверта"
-                width="16"
-              />
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a class="nav-link" href="tel:+380961111111">
-              <img
-                src="./images/smartphone.svg"
-                alt="Иконка телефона"
-                width="10"
-              />
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container header-flex">
+        <nav class="nav-flex">
+          <!-- Logotype of site -->
+          <a href="" class="logo"><span class="logo-blue">Web</span>Studio</a>
+          <!-- Navigation by site -->
+          <ul class="nav-list-site">
+            <li><a class="nav-link current" href="">Студия</a></li>
+            <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="nav-link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <address class="address">
+          <!-- Kontakts -->
+          <ul class="nav-list-contacts">
+            <li>
+              <a class="nav-link icon-address" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a class="nav-link icon-address" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main>
@@ -62,12 +57,7 @@
         <div class="container">
           <h2 class="sectoin-title visually-hidden">Особенности</h2>
           <ul class="feature-flex">
-            <li>
-              <!--<div width="270">-->
-              <div class="img-feature">
-                <img src="images/antenna_1.svg" alt="Иконка" width="70" />
-              </div>
-
+            <li class="icon-features">
               <h3 class="features-item-header">Внимание к деталям</h3>
               <p class="features-item-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -177,29 +167,48 @@
 
           <ul class="team-flex">
             <li class="team-item">
-              <div>
-                <img
-                  class="imgblock"
-                  src="images/photo_smith.jpg"
-                  alt="Фото сотрудника"
-                  width="270"
-                />
-
+              <img
+                class="imgblock"
+                src="images/photo_smith.jpg"
+                alt="Фото сотрудника"
+                width="270"
+              />
+              <div class="card-description">
                 <h3 class="team-header">Николай Кучеренко</h3>
                 <p class="team-profetion">Product Designer</p>
 
                 <ul class="messengers-flex">
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Instagram">Instagram</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Instagram"
+                      >Instagram</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Twitter">Twitter</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Twitter"
+                      >Twitter</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Facebook">Facebook</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Facebook"
+                      >Facebook</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Linkedin">Linkedin</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Linkedin"
+                      >Linkedin</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -218,16 +227,36 @@
 
                 <ul class="messengers-flex">
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Instagram">Instagram</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Instagram"
+                      >Instagram</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Twitter">Twitter</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Twitter"
+                      >Twitter</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Facebook">Facebook</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Facebook"
+                      >Facebook</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Linkedin">Linkedin</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Linkedin"
+                      >Linkedin</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -246,16 +275,36 @@
 
                 <ul class="messengers-flex">
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Instagram">Instagram</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Instagram"
+                      >Instagram</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Twitter">Twitter</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Twitter"
+                      >Twitter</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Facebook">Facebook</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Facebook"
+                      >Facebook</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Linkedin">Linkedin</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Linkedin"
+                      >Linkedin</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -274,16 +323,36 @@
 
                 <ul class="messengers-flex">
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Instagram">Instagram</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Instagram"
+                      >Instagram</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Twitter">Twitter</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Twitter"
+                      >Twitter</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Facebook">Facebook</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Facebook"
+                      >Facebook</a
+                    >
                   </li>
                   <li class="messenger-item">
-                    <a href="" aria-label="Ссылка на Linkedin">Linkedin</a>
+                    <a
+                      class="visually-hidden"
+                      href=""
+                      aria-label="Ссылка на Linkedin"
+                      >Linkedin</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -293,7 +362,6 @@
       </section>
 
       <!-- Section - regular customers -->
-
       <section>
         <div class="customers container">
           <h2 class="sectoin-title">Постоянные клиенты</h2>
@@ -377,70 +445,53 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer-flex">
-          <!-- Contact Information -->
-          <div>
-            <a href="" class="logo"
-              ><span class="logo-blue">Web</span> Studio</a
-            >
-
-            <address class="footer-address">
-              г. Киев, пр-т Леси Украинки, 26, <br />
-
-              <span
-                ><a class="footer-contact" href="">info@example.com</a></span
-              >
-              <br />
-              <span
-                ><a class="footer-contact" href="">+38 099 111 11 11</a></span
-              >
-            </address>
-          </div>
-
-          <!-- Our social networks -->
-          <div>
-            <b>Присоединяйтесь</b>
-
-            <ul class="messengers-flex">
-              <li class="messenger-item">
-                <a href="" aria-label="Ссылка на Instagram">Instagram</a>
-              </li>
-              <li class="messenger-item">
-                <a href="" aria-label="Ссылка на Twitter">Twitter</a>
-              </li>
-              <li class="messenger-item">
-                <a href="" aria-label="Ссылка на Twitter">Facebook</a>
-              </li>
-              <li class="messenger-item">
-                <a href="" aria-label="Ссылка на Linkedin">Linkedin</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Subscribe to the newsletter -->
-          <div class="form">
-            <b>Подпишитесь на рассылку</b>
-            <form method="post">
-              <input type="email" name="user-email" placeholder="E-mail" />
-              <!-- <input type="submit" value="Подписаться" /> -->
-
-              <a class="button" href="">
-                Подписаться
-                <img
-                  class="button-icon"
-                  src="images/icon_send.svg"
-                  alt="Иконка стрелки"
-                  width="24"
-                />
-              </a>
-            </form>
-          </div>
+      <div class="container footer-flex">
+        <!-- Contact Information -->
+        <div>
+          <a href="./index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
+    
+          <address class="footer-address">
+            г. Киев, пр-т Леси Украинки, 26, <br />
+    
+            <span><a class="footer-contact" href="">info@example.com</a></span>
+            <br />
+            <span><a class="footer-contact" href="">+38 099 111 11 11</a></span>
+          </address>
         </div>
-
-        <!--There must to be a line-->
-
-        <p class="developed">2020 | Developed by GoIT Students</p>
+    
+        <!-- Our social networks -->
+        <div>
+          <b>Присоединяйтесь</b>
+    
+          <ul class="messengers-flex">
+            <li class="messenger-item">
+              <a class="visually-hidden" href="" aria-label="Ссылка на Instagram">Instagram</a>
+            </li>
+            <li class="messenger-item">
+              <a class="visually-hidden" href="" aria-label="Ссылка на Twitter">Twitter</a>
+            </li>
+            <li class="messenger-item">
+              <a class="visually-hidden" href="" aria-label="Ссылка на Linkedin">Linkedin</a>
+            </li>
+            <li class="messenger-item">
+              <a class="visually-hidden" href="" aria-label="Ссылка на Twitter">Facebook</a>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Subscribe to the newsletter -->
+        <div class="form">
+          <b>Подпишитесь на рассылку</b>
+          <form method="post">
+            <input type="email" name="user-email" placeholder="E-mail" />
+            <!-- <input type="submit" value="Подписаться" /> -->
+    
+            <a class="button" href="">
+              Подписаться
+              <img src="images/icon_send.svg" alt="Иконка стрелки" width="24" />
+            </a>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

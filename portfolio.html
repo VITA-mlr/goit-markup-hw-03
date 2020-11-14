@@ -14,41 +14,33 @@
   </head>
   <body>
     <header class="header-section">
-      <nav class="container nav-flex">
-        <!-- Logotype of site -->
-        <a href="./index.html" class="logo"
-          ><span class="logo-blue">Web</span> Studio</a
-        >
-        <!-- Navigation by site -->
-        <ul class="nav-list-site">
-          <li><a class="nav-link" href="./index.html">Студия</a></li>
-          <li><a class="nav-link current" href="">Портфолио</a></li>
-          <li><a class="nav-link" href="">Контакты</a></li>
-        </ul>
-        <!-- Contakts -->
-        <ul class="nav-list-contacts">
-          <li>
-            <a class="nav-link" href="mailto:info@devstudio.com">
-              <img
-                src="./images/envelope.svg"
-                alt="Иконка котверта"
-                width="16"
-              />
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a class="nav-link" href="tel:+380961111111">
-              <img
-                src="./images/smartphone.svg"
-                alt="Иконка телефона"
-                width="10"
-              />
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container header-flex">
+        <nav class="nav-flex">
+          <!-- Logotype of site -->
+          <a href="" class="logo"><span class="logo-blue">Web</span>Studio</a>
+          <!-- Navigation by site -->
+          <ul class="nav-list-site">
+            <li><a class="nav-link" href="./index.html">Студия</a></li>
+            <li><a class="nav-link current" href="">Портфолио</a></li>
+            <li><a class="nav-link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <address class="address">
+          <!-- Kontakts -->
+          <ul class="nav-list-contacts">
+            <li>
+              <a class="nav-link icon-address" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a class="nav-link icon-address" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main>
@@ -205,69 +197,83 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer-flex">
-          <!-- Contact Information -->
-          <div>
-            <a href="./index.html" class="logo"
-              ><span class="logo-blue">Web</span> Studio</a
+      <div class="container footer-flex">        
+        <!-- Contact Information -->
+        <div>
+          <a href="./index.html" class="logo"
+            ><span class="logo-blue">Web</span>Studio</a
+          >
+
+          <address class="footer-address">
+            г. Киев, пр-т Леси Украинки, 26, <br />
+
+            <span
+              ><a class="footer-contact" href="">info@example.com</a></span
             >
-
-            <address class="footer-address">
-              г. Киев, пр-т Леси Украинки, 26, <br />
-
-              <span
-                ><a class="footer-contact" href="">info@example.com</a></span
-              >
-              <br />
-              <span
-                ><a class="footer-contact" href="">+38 099 111 11 11</a></span
-              >\
-            </address>
-          </div>
-
-          <!-- Our social networks -->
-          <div>
-            <b>Присоединяйтесь</b>
-
-            <ul class="messengers-flex">
-              <li class="messenger-item">
-                <a href="" aria-label="Ссылка на Instagram">Instagram</a>
-              </li>
-              <li class="messenger-item">
-                <a href="" aria-label="Ссылка на Twitter">Twitter</a>
-              </li>
-              <li class="messenger-item">
-                <a href="" aria-label="Ссылка на Linkedin">Linkedin</a>
-              </li>
-              <li class="messenger-item">
-                <a href="" aria-label="Ссылка на Twitter">Facebook</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Subscribe to the newsletter -->
-          <div class="form">
-            <b>Подпишитесь на рассылку</b>
-            <form method="post">
-              <input type="email" name="user-email" placeholder="E-mail" />
-              <!-- <input type="submit" value="Подписаться" /> -->
-
-              <a class="button" href="">
-                Подписаться
-                <img
-                  src="images/icon_send.svg"
-                  alt="Иконка стрелки"
-                  width="24"
-                />
-              </a>
-            </form>
-          </div>
+            <br />
+            <span
+              ><a class="footer-contact" href="">+38 099 111 11 11</a></span
+            >
+          </address>
         </div>
 
-        <!-- There must to be a line -->
+        <!-- Our social networks -->
+        <div>
+          <b>Присоединяйтесь</b>
 
-        <p class="developed">2020 | Developed by GoIT Students</p>
+          <ul class="messengers-flex">
+            <li class="messenger-item">
+              <a
+                class="visually-hidden"
+                href=""
+                aria-label="Ссылка на Instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="messenger-item">
+              <a
+                class="visually-hidden"
+                href=""
+                aria-label="Ссылка на Twitter"
+                >Twitter</a
+              >
+            </li>
+            <li class="messenger-item">
+              <a
+                class="visually-hidden"
+                href=""
+                aria-label="Ссылка на Linkedin"
+                >Linkedin</a
+              >
+            </li>
+            <li class="messenger-item">
+              <a
+                class="visually-hidden"
+                href=""
+                aria-label="Ссылка на Twitter"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Subscribe to the newsletter -->
+        <div class="form">
+          <b>Подпишитесь на рассылку</b>
+          <form method="post">
+            <input type="email" name="user-email" placeholder="E-mail" />
+            <!-- <input type="submit" value="Подписаться" /> -->
+
+            <a class="button" href="">
+              Подписаться
+              <img
+                src="images/icon_send.svg"
+                alt="Иконка стрелки"
+                width="24"
+              />
+            </a>
+          </form>
+        </div>        
       </div>
     </footer>
   </body>
